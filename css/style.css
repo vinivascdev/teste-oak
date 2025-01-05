@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,16 +59,25 @@ button {
     font-size: 20px;
     cursor: pointer;
     text-align: center;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.02);
+    background-color: #00796B;
 }
 
 .hidden {
     display: none;
 }
 
+.lista-containe h2{
+    margin-top: 20px;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
 }
 
 table,
@@ -96,7 +107,17 @@ th {
     width: 60%;
 }
 
+#tabela-container {
+    max-height: 500px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+}
+
 #novo-produto{
-    margin-top: 20px;
     width:230px;
+}
+
+#botao-lista{
+    width: 40%;
+    margin-top: 20px;
 }
